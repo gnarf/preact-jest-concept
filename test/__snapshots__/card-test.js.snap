@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the card 1`] = `
+<div class="sc-bdVaJa hoDwbd">
+  <h2 class="sc-bwzfXH dNKnlC">Hello people</h2>
+</div>
+`;

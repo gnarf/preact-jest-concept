@@ -1,13 +1,13 @@
 import React from 'react';
 import 'jest-styled-components';
-import render from 'preact-render-to-string';
+import { shallow } from 'preact-render-spy';
 
 import Card from '../components/Card';
 
 test('Renders the card', () => {
-  const component = render(<Card title="Hello people" />);
+  const context = shallow(<Card title="Hello people" />);
 
-  console.log(component);
+  context[0].$$typeof = Symbol.for('react.test.json')
 
-  expect(component).toMatchSnapshot();
+  expect(context[0]).toMatchSnapshot();
 });
